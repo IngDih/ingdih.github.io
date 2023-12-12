@@ -1,0 +1,104 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ingrid's Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body>
+    <div class="banner">
+        <div class="innerbanner"> Ingrid<br> Castro's<br> Portfolio</div>
+    </div>
+    <div class="pl-10 pb-10">
+        <div class="grid grid-cols-3 grid-flow-col grid-flow-row gap-2 pt-8">
+            <!--SIDEBAR-->
+            <div class="sidebar border-solid border-black border-2 p-14 text-justify font-mono">
+                <div class="profilepic mx-auto"><img src="imgs\profilepic.png" alt="Ingrid Castro"></div><br><br>
+                <span class="big">ABOUT ME</span><br>
+                <p>Hi there, my name is <span class="big">Ingrid</span> and I am a fourth year student at CCT College
+                    Dublin.</p><br><br>
+                <p>I am originally a graduated and licensed lawyer in my home country (Brazil) and found in tech an
+                    opportunity to start over in a new career. During the passage of 4 years I've grown fond of multiple
+                    fields in tech, like Data Analytics, UI/UX and Networking, but would be happy to start a career in
+                    <span class="big">Web Development</span>.
+                </p><br><br>
+
+                <p>All the projects shown in this portfolio were created for WEBDEV modules and can portrait some of the
+                    style and things I've learned through the course. For contact consider sending me and email on: ingrid123@gmail.com or sending me a message in the form below. All Messages should be answered within 24h.</p><br><br>
+
+                Contact me:
+                <form id="contact-form" onsubmit="submitForm(event)">
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" name="name" required><br><br>
+
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required><br><br>
+
+                    <label for="message">Message:</label>
+                    <textarea id="message" name="message" required></textarea><br><br>
+
+                    <button type="submit">Submit</button>
+                </form>
+
+            </div>
+            <div class="portfoliobody col-span-2 p-14 pt-0 text-justify font-mono">
+                <!--Card1-->
+                <div class="card" onmouseover="showPreview(this)" onmouseout="hidePreview(this)">
+                    <div class="card-default">
+                        <div class="cardcontainer">
+                            <h4><b>Di Sushi Website</b></h4><br>
+                            <p>Technologies used: HTML/ CSS/ JS/ JSON/ BootStrap</p>
+                            <p>This website was built during college time, on second year, and  uses the technologies mentioned above. It Included 3 pages, navigation bar, use of APIs, authentication, demos of JavaScript use and some explanation of the overall project. The full on code is available on Github and accessible on the button below.
+                            </p>
+                            <br>
+                            <button class="github rounded"
+                                onclick="openGH1()"> See this on GitHub!</button>
+                        </div>
+                    </div>
+                    <div class="preview" style="display:none;">
+                        <img src="imgs\proj1.png">
+                    </div>
+                </div>
+                <!--Card2-->
+                <div class="card" onmouseover="showPreview(this)" onmouseout="hidePreview(this)">
+                    <div class="card-default">
+                        <div class="cardcontainer">
+                            <h4><b>T-Shop Website</b></h4><br>
+                            <p>Technologies used: HTML/CSS/JS/Server-side/Node.JS/XML/JSON</p><br>
+                            <p>In this project the emphasis was not on looks, but functionality. With the use of Node.JS, XML and JSON, I built a website that would have a server-side functionality to store data in XML/JSON. The Github repository also includes a 6min explanation of the overall code and design idea on its readme.</p><br>
+                            <button class="github rounded"
+                                onclick="openGH2()">See this on GitHub!</button>
+                        </div>
+                    </div>
+                    <div class="preview" style="display:none;">
+                        <img src="imgs\proj2.png">
+                    </div>
+                </div>
+                <!--Card3-->
+                <div class="card" onmouseover="showPreview(this)" onmouseout="hidePreview(this)">
+                    <div class="card-default">
+                        <div class="cardcontainer">
+                            <h4><b>My First Website</b></h4><br>
+
+                            <p>HTML/AllCustomCSS</p><br>
+                            <p>This is probably the less ambitious project of the three items in this portfolio, but has a special space in my heart due to the amount of work put on it back then, when I did not even knew how to work with TailWind/Bootstrap or other css tools. I did it all just by trying and testing things out and it was the most fun I had in a while. I kept going back and fourth trying to finish but being happy with the over all process, so besides being a very simple project, it was done with love.</p><br>
+                            <button class="github rounded"
+                                onclick="openGH3()">See this on GitHub!</button>
+                        </div>
+                    </div>
+                    <div class="preview" style="display:none;">
+                        <img src="imgs\proj3.png" alt="Preview">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+</body>
+
+</html>

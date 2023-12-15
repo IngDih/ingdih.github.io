@@ -42,3 +42,13 @@ function submitForm() {
     var githubURL = 'https://github.com/IngDih/firstWebsite';    
     window.open(githubURL, '_blank');
   }
+
+  function openLinkedIn() {
+    var linkedInURL = 'https://www.linkedin.com/in/ingrid-castro-a84563158/';    
+    window.open(linkedInURL, '_blank');
+  }
+
+  function openCV() {
+    var cvURL = 'https://drive.google.com/file/d/1JjB068uXBnO8NbuWEH_Er7XgwxBOLLv3/view?usp=drive_link';    
+    window.open(cvURL, '_blank');
+  }
